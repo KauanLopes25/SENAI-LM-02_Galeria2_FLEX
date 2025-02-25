@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 100px;
+}
+main{
+    flex-grow: 1;
+}
+.galeria{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.container-esquerdo {
+    width: 25%;
+    height: 100%;
+    background-color: purple;
+    object-fit: fill;
+}
+.foto{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid #fff;
+}
+.container-direita{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+.container-superior {
+    height: 50%;
+    display: flex;
+}
+.container-superior-esquerdo{
+    flex-grow: 1;
+    background-color: tomato;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-superior-esquerdo>.foto{
+    height: 50%;
+    width: 50%;
+    background-color: green;
+}
+.container-superior-esquerdo .foto:nth-of-type(1){
+    width: 100%;
+    background-color: pink;
+}
+.container-superior>.foto{
+    width: 34%;
+    background-color: yellow;
+}
+.container-inferior {
+    flex-grow: 1;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container-inferior .foto{
+    background-color: firebrick;
+    height: 50%;
+    width: 33%;
+}
+.container-inferior .foto:nth-of-type(3){
+    background-color: blue;
+    flex-grow: 1;
+    width: 100%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 64px;
+}
+footer{
+    height:  50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dev {
+    font-style: italic;
+    font-size: 1rem;
+}
